@@ -26,6 +26,19 @@ class DatePicker: BaseServerDrivenComponent {
         case time = "TIME"
         case dateAndTime = "DATE_TIME"
         case countDownTimer = "COUNTDOWN"
+        
+        func mapToUIDatePickerMode() -> UIDatePicker.Mode {
+            switch self {
+            case .date:
+                return .date
+            case .time:
+                return .time
+            case .dateAndTime:
+                return .dateAndTime
+            case .countDownTimer:
+                return .countDownTimer
+            }
+        }
     }
     
     enum CodingKeys: String, CodingKey {

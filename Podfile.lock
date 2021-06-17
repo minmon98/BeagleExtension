@@ -10,6 +10,7 @@ PODS:
   - BeagleYoga (1.19.0)
   - BeagleYogaKit (1.19.0):
     - BeagleYoga (~> 1.19)
+  - DropDown (2.3.13)
   - MaterialComponents (124.2.0):
     - MaterialComponents/ActionSheet (= 124.2.0)
     - "MaterialComponents/ActionSheet+Theming (= 124.2.0)"
@@ -660,6 +661,7 @@ PODS:
 DEPENDENCIES:
   - Beagle
   - BeagleScaffold
+  - DropDown
   - MaterialComponents
   - SVProgressHUD
 
@@ -670,6 +672,7 @@ SPEC REPOS:
     - BeagleScaffold
     - BeagleYoga
     - BeagleYogaKit
+    - DropDown
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
@@ -683,6 +686,7 @@ SPEC CHECKSUMS:
   BeagleScaffold: 18bbf70ea2d8898bbf62a5263d6357ba26c8679e
   BeagleYoga: 09c09f226e5bbabaea81e9b0c113676ad1c67fa3
   BeagleYogaKit: 8d17491b81f30f17f14ded3d057432f6bcce0f1e
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
@@ -690,6 +694,6 @@ SPEC CHECKSUMS:
   MotionInterchange: 13adae439b377e31d1674cc165539d50e1d1566a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: afaf59a4419215c39c242dc38c03d6e1087578ad
+PODFILE CHECKSUM: 79fb37da2ee8eb820a723aaed39654966de6d0b5
 
 COCOAPODS: 1.10.1

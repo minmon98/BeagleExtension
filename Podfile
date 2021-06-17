@@ -10,4 +10,5 @@ target 'BeagleExtension' do
   pod 'BeagleScaffold'
   pod 'MaterialComponents'
   pod 'SVProgressHUD'
+  pod 'DropDown'
 end

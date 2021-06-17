@@ -28,10 +28,12 @@ class BeagleAppConfig {
         dependencies.decoder.register(component: Slider.self)
         dependencies.decoder.register(component: SegmentedControl.self)
         dependencies.decoder.register(component: WebViewExtension.self)
+        dependencies.decoder.register(component: DropDownContainer.self)
         
         dependencies.decoder.register(action: AlertExtension.self)
         dependencies.decoder.register(action: ShowLoading.self)
         dependencies.decoder.register(action: DismissLoading.self)
+        dependencies.decoder.register(action: ShowDatePickerDialog.self)
         
         Beagle.dependencies = dependencies
         BeagleConfig.start(dependencies: dependencies)

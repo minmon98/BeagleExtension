@@ -30,6 +30,11 @@
 		37D38789267AF5AC00AA5A37 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38778267AF5AB00AA5A37 /* Switch.swift */; };
 		37D3878A267AF5AC00AA5A37 /* ShowLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38779267AF5AB00AA5A37 /* ShowLoading.swift */; };
 		37D3878B267AF5AC00AA5A37 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D3877A267AF5AC00AA5A37 /* Slider.swift */; };
+		37D38869267B545900AA5A37 /* ShowDatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38864267B545800AA5A37 /* ShowDatePickerDialog.swift */; };
+		37D3886A267B545900AA5A37 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38865267B545800AA5A37 /* Colors.swift */; };
+		37D3886B267B545900AA5A37 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38866267B545800AA5A37 /* DatePickerDialog.swift */; };
+		37D3886C267B545900AA5A37 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38867267B545800AA5A37 /* UIColor+Ext.swift */; };
+		37D3886D267B545900AA5A37 /* DropDownContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38868267B545900AA5A37 /* DropDownContainer.swift */; };
 		5F3AD38DEC5AC395BF198353 /* Pods_BeagleExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0121EBDEAEF8BA8E569D0C66 /* Pods_BeagleExtension.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +66,11 @@
 		37D38778267AF5AB00AA5A37 /* Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
 		37D38779267AF5AB00AA5A37 /* ShowLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowLoading.swift; sourceTree = "<group>"; };
 		37D3877A267AF5AC00AA5A37 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		37D38864267B545800AA5A37 /* ShowDatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDatePickerDialog.swift; sourceTree = "<group>"; };
+		37D38865267B545800AA5A37 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		37D38866267B545800AA5A37 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		37D38867267B545800AA5A37 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		37D38868267B545900AA5A37 /* DropDownContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownContainer.swift; sourceTree = "<group>"; };
 		95C507A538CEC74ACFB9D83B /* Pods-BeagleExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeagleExtension.debug.xcconfig"; path = "Target Support Files/Pods-BeagleExtension/Pods-BeagleExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +147,11 @@
 				37D38778267AF5AB00AA5A37 /* Switch.swift */,
 				37D38772267AF5AA00AA5A37 /* TextField.swift */,
 				37D3876A267AF5A800AA5A37 /* WebViewExtension.swift */,
+				37D38865267B545800AA5A37 /* Colors.swift */,
+				37D38866267B545800AA5A37 /* DatePickerDialog.swift */,
+				37D38868267B545900AA5A37 /* DropDownContainer.swift */,
+				37D38864267B545800AA5A37 /* ShowDatePickerDialog.swift */,
+				37D38867267B545800AA5A37 /* UIColor+Ext.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -265,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37636A19267AF4B1009E380D /* ViewController.swift in Sources */,
+				37D3886A267B545900AA5A37 /* Colors.swift in Sources */,
 				37636A15267AF4B1009E380D /* AppDelegate.swift in Sources */,
 				37636A17267AF4B1009E380D /* SceneDelegate.swift in Sources */,
 				37D38789267AF5AC00AA5A37 /* Switch.swift in Sources */,
@@ -279,9 +295,13 @@
 				37D38784267AF5AC00AA5A37 /* ContainerExtension.swift in Sources */,
 				37D3877D267AF5AC00AA5A37 /* AlertExtension.swift in Sources */,
 				37D3878B267AF5AC00AA5A37 /* Slider.swift in Sources */,
+				37D3886D267B545900AA5A37 /* DropDownContainer.swift in Sources */,
+				37D3886B267B545900AA5A37 /* DatePickerDialog.swift in Sources */,
 				37D38785267AF5AC00AA5A37 /* BaseServerDrivenComponent.swift in Sources */,
 				37D38781267AF5AC00AA5A37 /* SegmentedControl.swift in Sources */,
 				37D38786267AF5AC00AA5A37 /* Picker.swift in Sources */,
+				37D38869267B545900AA5A37 /* ShowDatePickerDialog.swift in Sources */,
+				37D3886C267B545900AA5A37 /* UIColor+Ext.swift in Sources */,
 				37D3877C267AF5AC00AA5A37 /* DatePicker.swift in Sources */,
 				37D38787267AF5AC00AA5A37 /* Card.swift in Sources */,
 			);
