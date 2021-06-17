@@ -69,7 +69,9 @@ class SegmentedControl: BaseServerDrivenComponent {
         
         private func configLayout() {
             if let tabColor = segmentedControl?.tabColor {
-                self.selectedSegmentTintColor = UIColor(hex: tabColor)
+                if #available(iOS 13.0, *) {
+                    self.selectedSegmentTintColor = UIColor(hex: tabColor)
+                }
             }
             if let textColor = segmentedControl?.textColor {
                 let attributes: [NSAttributedString.Key:Any] = [

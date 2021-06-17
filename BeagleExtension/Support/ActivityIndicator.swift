@@ -43,9 +43,13 @@ class ActivityIndicator: BaseServerDrivenComponent {
             if let `style` = activityIndicator.indicatorStyle {
                 switch style {
                 case .large:
-                    self.style = .large
+                    if #available(iOS 13.0, *) {
+                        self.style = .large
+                    }
                 case .medium:
-                    self.style = .medium
+                    if #available(iOS 13.0, *) {
+                        self.style = .medium
+                    }
                 }
             }
             self.startAnimating()
