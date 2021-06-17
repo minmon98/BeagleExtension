@@ -14,4 +14,5 @@ Pod::Spec.new do |spec|
   spec.dependency 'BeagleScaffold'
   spec.dependency 'MaterialComponents'
   spec.dependency 'SVProgressHUD'
+  spec.dependency 'DropDown'
 end
