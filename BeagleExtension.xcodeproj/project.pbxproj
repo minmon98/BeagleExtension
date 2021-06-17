@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37636A15267AF4B1009E380D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37636A14267AF4B1009E380D /* AppDelegate.swift */; };
+		37636A17267AF4B1009E380D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37636A16267AF4B1009E380D /* SceneDelegate.swift */; };
+		37636A19267AF4B1009E380D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37636A18267AF4B1009E380D /* ViewController.swift */; };
+		37636A1C267AF4B1009E380D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37636A1A267AF4B1009E380D /* Main.storyboard */; };
+		37636A1E267AF4B2009E380D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37636A1D267AF4B2009E380D /* Assets.xcassets */; };
+		37636A21267AF4B2009E380D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37636A1F267AF4B2009E380D /* LaunchScreen.storyboard */; };
+		37D3877B267AF5AC00AA5A37 /* WebViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D3876A267AF5A800AA5A37 /* WebViewExtension.swift */; };
+		37D3877C267AF5AC00AA5A37 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D3876B267AF5A800AA5A37 /* DatePicker.swift */; };
+		37D3877D267AF5AC00AA5A37 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D3876C267AF5A900AA5A37 /* AlertExtension.swift */; };
+		37D3877E267AF5AC00AA5A37 /* BeagleAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D3876D267AF5A900AA5A37 /* BeagleAppConfig.swift */; };
+		37D3877F267AF5AC00AA5A37 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D3876E267AF5A900AA5A37 /* ActivityIndicator.swift */; };
+		37D38780267AF5AC00AA5A37 /* DismissLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D3876F267AF5A900AA5A37 /* DismissLoading.swift */; };
+		37D38781267AF5AC00AA5A37 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38770267AF5A900AA5A37 /* SegmentedControl.swift */; };
+		37D38782267AF5AC00AA5A37 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38771267AF5AA00AA5A37 /* Label.swift */; };
+		37D38783267AF5AC00AA5A37 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38772267AF5AA00AA5A37 /* TextField.swift */; };
+		37D38784267AF5AC00AA5A37 /* ContainerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38773267AF5AA00AA5A37 /* ContainerExtension.swift */; };
+		37D38785267AF5AC00AA5A37 /* BaseServerDrivenComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38774267AF5AA00AA5A37 /* BaseServerDrivenComponent.swift */; };
+		37D38786267AF5AC00AA5A37 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38775267AF5AB00AA5A37 /* Picker.swift */; };
+		37D38787267AF5AC00AA5A37 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38776267AF5AB00AA5A37 /* Card.swift */; };
+		37D38788267AF5AC00AA5A37 /* BeagleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38777267AF5AB00AA5A37 /* BeagleUtil.swift */; };
+		37D38789267AF5AC00AA5A37 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38778267AF5AB00AA5A37 /* Switch.swift */; };
+		37D3878A267AF5AC00AA5A37 /* ShowLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38779267AF5AB00AA5A37 /* ShowLoading.swift */; };
+		37D3878B267AF5AC00AA5A37 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D3877A267AF5AC00AA5A37 /* Slider.swift */; };
+		5F3AD38DEC5AC395BF198353 /* Pods_BeagleExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0121EBDEAEF8BA8E569D0C66 /* Pods_BeagleExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0121EBDEAEF8BA8E569D0C66 /* Pods_BeagleExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeagleExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		274830B0B92146769BA49BD2 /* Pods-BeagleExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeagleExtension.release.xcconfig"; path = "Target Support Files/Pods-BeagleExtension/Pods-BeagleExtension.release.xcconfig"; sourceTree = "<group>"; };
+		37636A11267AF4B1009E380D /* BeagleExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeagleExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37636A14267AF4B1009E380D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		37636A16267AF4B1009E380D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		37636A18267AF4B1009E380D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37636A1B267AF4B1009E380D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37636A1D267AF4B2009E380D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37636A20267AF4B2009E380D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37636A22267AF4B2009E380D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37D3876A267AF5A800AA5A37 /* WebViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewExtension.swift; sourceTree = "<group>"; };
+		37D3876B267AF5A800AA5A37 /* DatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		37D3876C267AF5A900AA5A37 /* AlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		37D3876D267AF5A900AA5A37 /* BeagleAppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeagleAppConfig.swift; sourceTree = "<group>"; };
+		37D3876E267AF5A900AA5A37 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		37D3876F267AF5A900AA5A37 /* DismissLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissLoading.swift; sourceTree = "<group>"; };
+		37D38770267AF5A900AA5A37 /* SegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		37D38771267AF5AA00AA5A37 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		37D38772267AF5AA00AA5A37 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		37D38773267AF5AA00AA5A37 /* ContainerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerExtension.swift; sourceTree = "<group>"; };
+		37D38774267AF5AA00AA5A37 /* BaseServerDrivenComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseServerDrivenComponent.swift; sourceTree = "<group>"; };
+		37D38775267AF5AB00AA5A37 /* Picker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		37D38776267AF5AB00AA5A37 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		37D38777267AF5AB00AA5A37 /* BeagleUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeagleUtil.swift; sourceTree = "<group>"; };
+		37D38778267AF5AB00AA5A37 /* Switch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
+		37D38779267AF5AB00AA5A37 /* ShowLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowLoading.swift; sourceTree = "<group>"; };
+		37D3877A267AF5AC00AA5A37 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		95C507A538CEC74ACFB9D83B /* Pods-BeagleExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeagleExtension.debug.xcconfig"; path = "Target Support Files/Pods-BeagleExtension/Pods-BeagleExtension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37636A0E267AF4B1009E380D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3AD38DEC5AC395BF198353 /* Pods_BeagleExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CC2ECA886EB44ABDA3E8D2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0121EBDEAEF8BA8E569D0C66 /* Pods_BeagleExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37636A08267AF4B1009E380D = {
+			isa = PBXGroup;
+			children = (
+				37636A13267AF4B1009E380D /* BeagleExtension */,
+				37636A12267AF4B1009E380D /* Products */,
+				A4077141EBDCC5498A9F2D36 /* Pods */,
+				2CC2ECA886EB44ABDA3E8D2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		37636A12267AF4B1009E380D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37636A11267AF4B1009E380D /* BeagleExtension.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37636A13267AF4B1009E380D /* BeagleExtension */ = {
+			isa = PBXGroup;
+			children = (
+				37D38769267AF59800AA5A37 /* Support */,
+				37636A14267AF4B1009E380D /* AppDelegate.swift */,
+				37636A16267AF4B1009E380D /* SceneDelegate.swift */,
+				37636A18267AF4B1009E380D /* ViewController.swift */,
+				37636A1A267AF4B1009E380D /* Main.storyboard */,
+				37636A1D267AF4B2009E380D /* Assets.xcassets */,
+				37636A1F267AF4B2009E380D /* LaunchScreen.storyboard */,
+				37636A22267AF4B2009E380D /* Info.plist */,
+			);
+			path = BeagleExtension;
+			sourceTree = "<group>";
+		};
+		37D38769267AF59800AA5A37 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				37D3876E267AF5A900AA5A37 /* ActivityIndicator.swift */,
+				37D3876C267AF5A900AA5A37 /* AlertExtension.swift */,
+				37D38774267AF5AA00AA5A37 /* BaseServerDrivenComponent.swift */,
+				37D3876D267AF5A900AA5A37 /* BeagleAppConfig.swift */,
+				37D38777267AF5AB00AA5A37 /* BeagleUtil.swift */,
+				37D38776267AF5AB00AA5A37 /* Card.swift */,
+				37D38773267AF5AA00AA5A37 /* ContainerExtension.swift */,
+				37D3876B267AF5A800AA5A37 /* DatePicker.swift */,
+				37D3876F267AF5A900AA5A37 /* DismissLoading.swift */,
+				37D38771267AF5AA00AA5A37 /* Label.swift */,
+				37D38775267AF5AB00AA5A37 /* Picker.swift */,
+				37D38770267AF5A900AA5A37 /* SegmentedControl.swift */,
+				37D38779267AF5AB00AA5A37 /* ShowLoading.swift */,
+				37D3877A267AF5AC00AA5A37 /* Slider.swift */,
+				37D38778267AF5AB00AA5A37 /* Switch.swift */,
+				37D38772267AF5AA00AA5A37 /* TextField.swift */,
+				37D3876A267AF5A800AA5A37 /* WebViewExtension.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A4077141EBDCC5498A9F2D36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95C507A538CEC74ACFB9D83B /* Pods-BeagleExtension.debug.xcconfig */,
+				274830B0B92146769BA49BD2 /* Pods-BeagleExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37636A10267AF4B1009E380D /* BeagleExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37636A25267AF4B2009E380D /* Build configuration list for PBXNativeTarget "BeagleExtension" */;
+			buildPhases = (
+				489088AEF445C9E8EA80CDB0 /* [CP] Check Pods Manifest.lock */,
+				37636A0D267AF4B1009E380D /* Sources */,
+				37636A0E267AF4B1009E380D /* Frameworks */,
+				37636A0F267AF4B1009E380D /* Resources */,
+				46ACFDAB4F2DED3362395CB7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeagleExtension;
+			productName = BeagleExtension;
+			productReference = 37636A11267AF4B1009E380D /* BeagleExtension.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37636A09267AF4B1009E380D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					37636A10267AF4B1009E380D = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 37636A0C267AF4B1009E380D /* Build configuration list for PBXProject "BeagleExtension" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37636A08267AF4B1009E380D;
+			productRefGroup = 37636A12267AF4B1009E380D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37636A10267AF4B1009E380D /* BeagleExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37636A0F267AF4B1009E380D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37636A21267AF4B2009E380D /* LaunchScreen.storyboard in Resources */,
+				37636A1E267AF4B2009E380D /* Assets.xcassets in Resources */,
+				37636A1C267AF4B1009E380D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46ACFDAB4F2DED3362395CB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeagleExtension/Pods-BeagleExtension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeagleExtension/Pods-BeagleExtension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeagleExtension/Pods-BeagleExtension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		489088AEF445C9E8EA80CDB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeagleExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37636A0D267AF4B1009E380D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37636A19267AF4B1009E380D /* ViewController.swift in Sources */,
+				37636A15267AF4B1009E380D /* AppDelegate.swift in Sources */,
+				37636A17267AF4B1009E380D /* SceneDelegate.swift in Sources */,
+				37D38789267AF5AC00AA5A37 /* Switch.swift in Sources */,
+				37D38783267AF5AC00AA5A37 /* TextField.swift in Sources */,
+				37D38788267AF5AC00AA5A37 /* BeagleUtil.swift in Sources */,
+				37D3878A267AF5AC00AA5A37 /* ShowLoading.swift in Sources */,
+				37D3877E267AF5AC00AA5A37 /* BeagleAppConfig.swift in Sources */,
+				37D38782267AF5AC00AA5A37 /* Label.swift in Sources */,
+				37D3877F267AF5AC00AA5A37 /* ActivityIndicator.swift in Sources */,
+				37D3877B267AF5AC00AA5A37 /* WebViewExtension.swift in Sources */,
+				37D38780267AF5AC00AA5A37 /* DismissLoading.swift in Sources */,
+				37D38784267AF5AC00AA5A37 /* ContainerExtension.swift in Sources */,
+				37D3877D267AF5AC00AA5A37 /* AlertExtension.swift in Sources */,
+				37D3878B267AF5AC00AA5A37 /* Slider.swift in Sources */,
+				37D38785267AF5AC00AA5A37 /* BaseServerDrivenComponent.swift in Sources */,
+				37D38781267AF5AC00AA5A37 /* SegmentedControl.swift in Sources */,
+				37D38786267AF5AC00AA5A37 /* Picker.swift in Sources */,
+				37D3877C267AF5AC00AA5A37 /* DatePicker.swift in Sources */,
+				37D38787267AF5AC00AA5A37 /* Card.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		37636A1A267AF4B1009E380D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37636A1B267AF4B1009E380D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		37636A1F267AF4B2009E380D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37636A20267AF4B2009E380D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37636A23267AF4B2009E380D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		37636A24267AF4B2009E380D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37636A26267AF4B2009E380D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95C507A538CEC74ACFB9D83B /* Pods-BeagleExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BeagleExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.minhmon.BeagleExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37636A27267AF4B2009E380D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274830B0B92146769BA49BD2 /* Pods-BeagleExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BeagleExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.minhmon.BeagleExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37636A0C267AF4B1009E380D /* Build configuration list for PBXProject "BeagleExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37636A23267AF4B2009E380D /* Debug */,
+				37636A24267AF4B2009E380D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37636A25267AF4B2009E380D /* Build configuration list for PBXNativeTarget "BeagleExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37636A26267AF4B2009E380D /* Debug */,
+				37636A27267AF4B2009E380D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37636A09267AF4B1009E380D /* Project object */;
+}

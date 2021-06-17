@@ -1,0 +1,6 @@
+framework module Pods_BeagleExtension {
+  umbrella header "Pods-BeagleExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
