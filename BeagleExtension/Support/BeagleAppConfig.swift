@@ -9,10 +9,10 @@ import Foundation
 import Beagle
 import BeagleScaffold
 
-class BeagleAppConfig {
-    static let shared = BeagleAppConfig()
+public class BeagleAppConfig {
+    public static let shared = BeagleAppConfig()
     
-    func config(url: String) {
+    public func config(url: String) {
         let dependencies = BeagleDependencies()
         dependencies.urlBuilder = UrlBuilder(
             baseUrl: URL(string: url)!
