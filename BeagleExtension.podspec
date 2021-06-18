@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "BeagleExtension"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "This is an extension of beagle lib."
   spec.description  = "This is an extension of beagle lib. It contains more widgets, more actions."
   spec.homepage     = "https://github.com/minmon98/BeagleExtension"
@@ -15,4 +15,5 @@ Pod::Spec.new do |spec|
   spec.dependency 'MaterialComponents'
   spec.dependency 'SVProgressHUD'
   spec.dependency 'DropDown'
+  spec.dependency 'MBCircularProgressBar'
 end
