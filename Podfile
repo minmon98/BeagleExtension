@@ -11,4 +11,5 @@ target 'BeagleExtension' do
   pod 'MaterialComponents'
   pod 'SVProgressHUD'
   pod 'DropDown'
+  pod 'MBCircularProgressBar'
 end

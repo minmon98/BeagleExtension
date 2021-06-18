@@ -35,6 +35,7 @@
 		37D3886B267B545900AA5A37 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38866267B545800AA5A37 /* DatePickerDialog.swift */; };
 		37D3886C267B545900AA5A37 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38867267B545800AA5A37 /* UIColor+Ext.swift */; };
 		37D3886D267B545900AA5A37 /* DropDownContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D38868267B545900AA5A37 /* DropDownContainer.swift */; };
+		37D388A9267C7DCC00AA5A37 /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D388A8267C7DCC00AA5A37 /* CircularProgressBar.swift */; };
 		5F3AD38DEC5AC395BF198353 /* Pods_BeagleExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0121EBDEAEF8BA8E569D0C66 /* Pods_BeagleExtension.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		37D38866267B545800AA5A37 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
 		37D38867267B545800AA5A37 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		37D38868267B545900AA5A37 /* DropDownContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownContainer.swift; sourceTree = "<group>"; };
+		37D388A8267C7DCC00AA5A37 /* CircularProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		95C507A538CEC74ACFB9D83B /* Pods-BeagleExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeagleExtension.debug.xcconfig"; path = "Target Support Files/Pods-BeagleExtension/Pods-BeagleExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 				37D38868267B545900AA5A37 /* DropDownContainer.swift */,
 				37D38864267B545800AA5A37 /* ShowDatePickerDialog.swift */,
 				37D38867267B545800AA5A37 /* UIColor+Ext.swift */,
+				37D388A8267C7DCC00AA5A37 /* CircularProgressBar.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				37D3886C267B545900AA5A37 /* UIColor+Ext.swift in Sources */,
 				37D3877C267AF5AC00AA5A37 /* DatePicker.swift in Sources */,
 				37D38787267AF5AC00AA5A37 /* Card.swift in Sources */,
+				37D388A9267C7DCC00AA5A37 /* CircularProgressBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

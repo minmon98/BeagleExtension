@@ -5,6 +5,7 @@ ${BUILT_PRODUCTS_DIR}/BeagleScaffold/BeagleScaffold.framework
 ${BUILT_PRODUCTS_DIR}/BeagleYoga/yoga.framework
 ${BUILT_PRODUCTS_DIR}/BeagleYogaKit/YogaKit.framework
 ${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework
+${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework
 ${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework
 ${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework
 ${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework

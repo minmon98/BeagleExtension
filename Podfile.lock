@@ -651,6 +651,7 @@ PODS:
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
     - MDFTextAccessibility
+  - MBCircularProgressBar (0.3.5)
   - MDFInternationalization (3.0.0)
   - MDFTextAccessibility (2.0.1)
   - MotionAnimator (4.0.1):
@@ -663,6 +664,7 @@ DEPENDENCIES:
   - BeagleScaffold
   - DropDown
   - MaterialComponents
+  - MBCircularProgressBar
   - SVProgressHUD
 
 SPEC REPOS:
@@ -674,6 +676,7 @@ SPEC REPOS:
     - BeagleYogaKit
     - DropDown
     - MaterialComponents
+    - MBCircularProgressBar
     - MDFInternationalization
     - MDFTextAccessibility
     - MotionAnimator
@@ -688,12 +691,13 @@ SPEC CHECKSUMS:
   BeagleYogaKit: 8d17491b81f30f17f14ded3d057432f6bcce0f1e
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
   MotionAnimator: 5f99d7c9592928c0f28a66283eda9c3b657dc480
   MotionInterchange: 13adae439b377e31d1674cc165539d50e1d1566a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 79fb37da2ee8eb820a723aaed39654966de6d0b5
+PODFILE CHECKSUM: 1bfe58d75c619fa80085e4ac2f04c325868fb6ee
 
 COCOAPODS: 1.10.1
