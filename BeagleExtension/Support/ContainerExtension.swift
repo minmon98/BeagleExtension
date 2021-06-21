@@ -62,16 +62,15 @@ class ContainerExtension: BaseServerDrivenComponent {
             viewAfterConfig.addSubview(beagleView)
             beagleView.anchorTo(superview: viewAfterConfig)
         }
+        if let backgroundColorString = containerExtensionView.backgroundColorString {
+            viewAfterConfig.backgroundColor = UIColor(hex: backgroundColorString)?.withAlphaComponent(CGFloat(containerExtensionView.backgroundOpacity))
+        }
         return viewAfterConfig
     }
     
     private class ContainerExtensionView: UIView {
-        private var backgroundOpacity = 1.0
-        private var backgroundColorString: String? {
-            didSet {
-                self.backgroundColor = UIColor(hex: backgroundColorString ?? "#ffffff")?.withAlphaComponent(CGFloat(backgroundOpacity))
-            }
-        }
+        var backgroundOpacity = 1.0
+        var backgroundColorString: String?
         
         init(_ containerExtension: ContainerExtension, renderer: BeagleRenderer) {
             super.init(frame: .zero)
