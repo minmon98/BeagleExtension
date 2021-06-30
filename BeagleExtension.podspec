@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "BeagleExtension"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.8"
   spec.summary      = "This is an extension of beagle lib."
   spec.description  = "This is an extension of beagle lib. It contains more widgets, more actions."
   spec.homepage     = "https://github.com/minmon98/BeagleExtension"
