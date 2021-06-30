@@ -65,6 +65,7 @@ class WebViewExtension: BaseServerDrivenComponent {
             self.controller = renderer.controller
             controller?.execute(actions: self.webView?.onInit, event: "onInit", origin: self)
             renderer.observe(webView.url, andUpdate: \.source, in: self)
+            renderer.observe(webView.html, andUpdate: \.html, in: self)
             
             let leftSwipe = UISwipeGestureRecognizer()
             leftSwipe.direction = .left
