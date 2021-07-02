@@ -12,6 +12,7 @@ import WebKit
 class WebViewExtension: BaseServerDrivenComponent {
     var url: Expression<String>?
     var html: Expression<String>?
+    var authorization: String?
     var onInit: [Action]?
     var onLoaded: [Action]?
     var onError: [Action]?
@@ -19,6 +20,7 @@ class WebViewExtension: BaseServerDrivenComponent {
     enum CodingKeys: String, CodingKey {
         case url
         case html
+        case authorization
         case onInit
         case onLoaded
         case onError
@@ -29,6 +31,7 @@ class WebViewExtension: BaseServerDrivenComponent {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         url = try container.decodeIfPresent(Expression<String>.self, forKey: .url)
         html = try container.decodeIfPresent(Expression<String>.self, forKey: .html)
+        authorization = try container.decodeIfPresent(String.self, forKey: .authorization)
         onInit = try container.decodeIfPresent(forKey: .onInit)
         onLoaded = try container.decodeIfPresent(forKey: .onLoaded)
         onError = try container.decodeIfPresent(forKey: .onError)
@@ -93,18 +96,21 @@ class WebViewExtension: BaseServerDrivenComponent {
         private func loadRequest() {
             timer?.invalidate()
             timer = nil
-            timer = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: false, block: { _ in
+            timer = Timer.scheduledTimer(withTimeInterval: 20.0, repeats: false, block: { _ in
                 self.controller?.execute(actions: self.webView?.onError, event: "onError", origin: self)
             })
             guard let `source` = source, let url = URL(string: source) else { return }
-            let request = URLRequest(url: url, cachePolicy: .reloadIgnoringCacheData, timeoutInterval: 10)
+            var request = URLRequest(url: url, cachePolicy: .reloadIgnoringCacheData, timeoutInterval: 20)
+            if let authorization = webView?.authorization {
+                request.setValue(authorization, forHTTPHeaderField: "Authorization")
+            }
             self.load(request)
         }
         
         private func loadHtml() {
             timer?.invalidate()
             timer = nil
-            timer = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: false, block: { _ in
+            timer = Timer.scheduledTimer(withTimeInterval: 20.0, repeats: false, block: { _ in
                 self.controller?.execute(actions: self.webView?.onError, event: "onError", origin: self)
             })
             guard let `html` = html else { return }

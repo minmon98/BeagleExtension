@@ -23,6 +23,7 @@ class TextField: BaseServerDrivenComponent {
     var onChange: [Action]?
     var onSubmit: [Action]?
     var onTap: [Action]?
+    var isFocus: Bool?
     
     public enum ClearButtonMode: String, Decodable, CaseIterable {
         case always = "ALWAYS"
@@ -45,6 +46,7 @@ class TextField: BaseServerDrivenComponent {
         case onChange
         case onSubmit
         case onTap
+        case isFocus
     }
         
     required convenience init(from decoder: Decoder) throws {
@@ -63,6 +65,7 @@ class TextField: BaseServerDrivenComponent {
         onChange = try container.decodeIfPresent(forKey: .onChange)
         onSubmit = try container.decodeIfPresent(forKey: .onSubmit)
         onTap = try container.decodeIfPresent(forKey: .onTap)
+        isFocus = try container.decodeIfPresent(Bool.self, forKey: .isFocus)
         widgetProperties = try WidgetProperties(from: decoder)
     }
     
@@ -120,6 +123,9 @@ class TextField: BaseServerDrivenComponent {
             }
             if let textColor = textField?.textColor {
                 self.textColor = UIColor(hex: textColor)
+            }
+            if let isFocus = textField?.isFocus, isFocus {
+                self.becomeFirstResponder()
             }
             self.borderStyle = .none
             self.addTarget(self, action: #selector(valueChange), for: .editingChanged)
