@@ -11,6 +11,7 @@ PODS:
   - BeagleYogaKit (1.19.0):
     - BeagleYoga (~> 1.19)
   - DropDown (2.3.13)
+  - IQKeyboardManagerSwift (6.5.6)
   - MaterialComponents (124.2.0):
     - MaterialComponents/ActionSheet (= 124.2.0)
     - "MaterialComponents/ActionSheet+Theming (= 124.2.0)"
@@ -663,6 +664,7 @@ DEPENDENCIES:
   - Beagle
   - BeagleScaffold
   - DropDown
+  - IQKeyboardManagerSwift
   - MaterialComponents
   - MBCircularProgressBar
   - SVProgressHUD
@@ -675,6 +677,7 @@ SPEC REPOS:
     - BeagleYoga
     - BeagleYogaKit
     - DropDown
+    - IQKeyboardManagerSwift
     - MaterialComponents
     - MBCircularProgressBar
     - MDFInternationalization
@@ -690,6 +693,7 @@ SPEC CHECKSUMS:
   BeagleYoga: 09c09f226e5bbabaea81e9b0c113676ad1c67fa3
   BeagleYogaKit: 8d17491b81f30f17f14ded3d057432f6bcce0f1e
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
@@ -698,6 +702,6 @@ SPEC CHECKSUMS:
   MotionInterchange: 13adae439b377e31d1674cc165539d50e1d1566a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 1bfe58d75c619fa80085e4ac2f04c325868fb6ee
+PODFILE CHECKSUM: 556011a8725085035b2cb021b2d4e8285358fb29
 
 COCOAPODS: 1.10.1

@@ -8,11 +8,15 @@
 import Foundation
 import Beagle
 import BeagleScaffold
+import IQKeyboardManagerSwift
 
 public class BeagleAppConfig {
     public static let shared = BeagleAppConfig()
     
     public func config(url: String) {
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        
         let dependencies = BeagleDependencies()
         dependencies.urlBuilder = UrlBuilder(
             baseUrl: URL(string: url)!

@@ -12,4 +12,5 @@ target 'BeagleExtension' do
   pod 'SVProgressHUD'
   pod 'DropDown'
   pod 'MBCircularProgressBar'
+  pod 'IQKeyboardManagerSwift'
 end

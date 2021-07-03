@@ -146,7 +146,6 @@ class TextField: BaseServerDrivenComponent {
         }
         
         func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-            self.resignFirstResponder()
             let regex = self.textField?.regex ?? ""
             controller?.execute(actions: self.textField?.onSubmit, with: "onSubmit", and: .dictionary([
                 "isMatchRegex": regex.isEmpty ? DynamicObject.bool(true) : DynamicObject.bool(!BeagleUtil.shared.matches(regex: regex, text: text ?? "").isEmpty),
