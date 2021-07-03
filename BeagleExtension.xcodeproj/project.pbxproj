@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373AFD58268FFB5700871801 /* AsyncAfter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373AFD57268FFB5700871801 /* AsyncAfter.swift */; };
 		37636A15267AF4B1009E380D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37636A14267AF4B1009E380D /* AppDelegate.swift */; };
 		37636A17267AF4B1009E380D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37636A16267AF4B1009E380D /* SceneDelegate.swift */; };
 		37636A19267AF4B1009E380D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37636A18267AF4B1009E380D /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		0121EBDEAEF8BA8E569D0C66 /* Pods_BeagleExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeagleExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		274830B0B92146769BA49BD2 /* Pods-BeagleExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeagleExtension.release.xcconfig"; path = "Target Support Files/Pods-BeagleExtension/Pods-BeagleExtension.release.xcconfig"; sourceTree = "<group>"; };
+		373AFD57268FFB5700871801 /* AsyncAfter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncAfter.swift; sourceTree = "<group>"; };
 		37636A11267AF4B1009E380D /* BeagleExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeagleExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37636A14267AF4B1009E380D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37636A16267AF4B1009E380D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				37D38778267AF5AB00AA5A37 /* Switch.swift */,
 				37D38772267AF5AA00AA5A37 /* TextField.swift */,
 				37D3876A267AF5A800AA5A37 /* WebViewExtension.swift */,
+				373AFD57268FFB5700871801 /* AsyncAfter.swift */,
 				37D38865267B545800AA5A37 /* Colors.swift */,
 				37D38866267B545800AA5A37 /* DatePickerDialog.swift */,
 				37D38868267B545900AA5A37 /* DropDownContainer.swift */,
@@ -292,6 +295,7 @@
 				37D3878A267AF5AC00AA5A37 /* ShowLoading.swift in Sources */,
 				37D3877E267AF5AC00AA5A37 /* BeagleAppConfig.swift in Sources */,
 				37D38782267AF5AC00AA5A37 /* Label.swift in Sources */,
+				373AFD58268FFB5700871801 /* AsyncAfter.swift in Sources */,
 				37D3877F267AF5AC00AA5A37 /* ActivityIndicator.swift in Sources */,
 				37D3877B267AF5AC00AA5A37 /* WebViewExtension.swift in Sources */,
 				37D38780267AF5AC00AA5A37 /* DismissLoading.swift in Sources */,

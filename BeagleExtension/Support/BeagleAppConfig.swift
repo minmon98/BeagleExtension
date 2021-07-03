@@ -34,6 +34,7 @@ public class BeagleAppConfig {
         dependencies.decoder.register(action: ShowLoading.self)
         dependencies.decoder.register(action: DismissLoading.self)
         dependencies.decoder.register(action: ShowDatePickerDialog.self)
+        dependencies.decoder.register(action: AsyncAfter.self)
         
         Beagle.dependencies = dependencies
         BeagleConfig.start(dependencies: dependencies)

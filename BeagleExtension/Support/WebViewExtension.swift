@@ -13,6 +13,8 @@ class WebViewExtension: BaseServerDrivenComponent {
     var url: Expression<String>?
     var html: Expression<String>?
     var authorization: String?
+    var syntaxToHandleBackNavigate: [String]?
+    var onBackNavigate: [Action]?
     var onInit: [Action]?
     var onLoaded: [Action]?
     var onError: [Action]?
@@ -24,6 +26,8 @@ class WebViewExtension: BaseServerDrivenComponent {
         case onInit
         case onLoaded
         case onError
+        case syntaxToHandleBackNavigate
+        case onBackNavigate
     }
     
     required convenience init(from decoder: Decoder) throws {
@@ -35,6 +39,8 @@ class WebViewExtension: BaseServerDrivenComponent {
         onInit = try container.decodeIfPresent(forKey: .onInit)
         onLoaded = try container.decodeIfPresent(forKey: .onLoaded)
         onError = try container.decodeIfPresent(forKey: .onError)
+        syntaxToHandleBackNavigate = try container.decodeIfPresent([String].self, forKey: .syntaxToHandleBackNavigate)
+        onBackNavigate = try container.decodeIfPresent(forKey: .onBackNavigate)
         widgetProperties = try WidgetProperties(from: decoder)
     }
     
@@ -135,10 +141,26 @@ class WebViewExtension: BaseServerDrivenComponent {
         
         func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
             decisionHandler(.allow)
+            
+            if let url = webView.url?.absoluteString {
+                self.webView?.syntaxToHandleBackNavigate?.forEach {
+                    if url.lowercased().contains($0.lowercased()) {
+                        self.controller?.execute(actions: self.webView?.onBackNavigate, event: "onBackNavigate", origin: self)
+                    }
+                }
+            }
         }
         
         func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
             decisionHandler(.allow)
+            
+            if let url = webView.url?.absoluteString {
+                self.webView?.syntaxToHandleBackNavigate?.forEach {
+                    if url.lowercased().contains($0.lowercased()) {
+                        self.controller?.execute(actions: self.webView?.onBackNavigate, event: "onBackNavigate", origin: self)
+                    }
+                }
+            }
         }
     }
 }
