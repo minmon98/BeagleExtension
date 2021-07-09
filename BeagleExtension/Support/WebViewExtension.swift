@@ -106,7 +106,7 @@ class WebViewExtension: BaseServerDrivenComponent {
                 self.controller?.execute(actions: self.webView?.onError, event: "onError", origin: self)
             })
             guard let `source` = source, let url = URL(string: source) else { return }
-            var request = URLRequest(url: url, cachePolicy: .reloadIgnoringCacheData, timeoutInterval: 20)
+            var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 20)
             if let authorization = webView?.authorization {
                 request.setValue(authorization, forHTTPHeaderField: "Authorization")
             }
